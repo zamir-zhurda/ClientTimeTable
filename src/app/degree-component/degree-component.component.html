@@ -1,0 +1,16 @@
+<div class="form-group">
+  <label>Deget</label>
+  <br />
+  <select
+    ng-selected="selected"
+    id="ddlDegrees"
+    name="ddlDegrees"
+    [(ngModel)]="degrees[0]"
+    (ngModelChange)="showValuePromptText('Selecteed Degree', $event)"
+    class="form-control"
+  >
+    <option *ngFor="let degree of degrees" [value]="degree.id">
+      {{ degree.dega }}
+    </option>
+  </select>
+</div>
